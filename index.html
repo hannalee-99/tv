@@ -7,16 +7,12 @@
 <title>o que tem pra assistir na TV?</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nabla&family=Electrolize&family=VT323&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&family=VT323&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#050505; --surface:#0b110b; --surface2:#0f1a0f; --line:#16361a;
     --text:#ffffff; --muted:#7fa882; --accent:#9FF85D; --accent-dim:#1c6b1c;
     --warn:#f8d65d; --btn-text:#000000;
-  }
-  @font-palette-values --matrix{
-    font-family:Nabla; base-palette:0;
-    override-colors:0 #9ff85d,1 #003B00,2 #008F11,3 #9ff85d,4 #003B00,5 #008F11;
   }
   ::selection{background:var(--accent); color:var(--btn-text)}
   body.roxo{
@@ -46,11 +42,11 @@
   }
   .head-inner{max-width:760px; margin:0 auto; padding:14px 16px 10px; position:relative}
   h1{
-    font-family:"Nabla","Impact",sans-serif; font-weight:400; font-palette:--matrix;
-    font-size:clamp(22px,6.5vw,30px); line-height:1.05; letter-spacing:.01em;
-    margin:0; text-transform:lowercase; padding-right:78px;
+    font-family:"Electrolize",sans-serif; font-weight:400; letter-spacing:.04em;
+    font-size:clamp(18px,5vw,22px); line-height:1.15; margin:0;
+    text-transform:lowercase; color:var(--text); padding-right:78px;
   }
-  h1 .sig{color:inherit}
+  h1 .sig{color:var(--accent)}
   .meta{font-family:"VT323",monospace; font-size:15px; color:var(--muted); letter-spacing:.02em; margin-top:5px}
 
   .controls{display:flex; flex-direction:column; gap:9px; margin-top:11px}
@@ -152,7 +148,7 @@
   <div class="head-inner">
     <button class="theme-btn" id="theme">tema roxo</button>
     <h1>o que tem pra assistir na <span class="sig">tv?</span></h1>
-    <div class="meta">grade atualizada · 28/06/2026 19:30 · janela móvel de ~5 dias</div>
+    <div class="meta">grade atualizada · 28/06/2026 19:32 · janela móvel de ~5 dias</div>
     <div class="controls">
       <div class="days" id="days"></div>
       <div class="row2">
